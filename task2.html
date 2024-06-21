@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div p {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Descendant Selector</h2>
+
+    <p>
+      The descendant selector matches all elements that are descendants of a
+      specified element.
+    </p>
+
+    <div>
+      <p>Hi this is kavya..!</p>
+      <p>Hi this is kavya..!</p>
+      <section><p>Hi this is kavya..!</p></section>
+    </div>
+
+    <p>Hi this is kavya..!</p>
+    <p>Hi this is kavya..!</p>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div > p {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Child Selector</h2>
+
+    <p>
+      The descendant selector matches all elements that are descendants of a
+      specified element.
+    </p>
+
+    <div>
+      <p>Hi this is kavya sree..!</p>
+      <p>Hi this is kavya sree..!</p>
+      <section><p>Hi this is kavya ..!</p></section>
+      <p>Hi this is kavya..!</p>
+      <p>Hi this is kavya..!</p>
+    </div>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      div + p {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Adjacent Sibling Selector</h2>
+
+    <div>
+      <p>Hi this is kavya..!</p>
+      <p>Paragraph 2 in the div.</p>
+    </div>
+
+    <p>Paragraph 3. After a div.</p>
+    <p>Paragraph 4. After a div.</p>
+
+    <div>
+      <p>Paragraph 5 in the div.</p>
+      <p>Paragraph 6 in the div.</p>
+    </div>
+    <p>Paragraph 7. After a div.</p>
+    <p>Paragraph 8. After a div.</p>
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div ~ p {
+  background-color: yellow;
+}
+</style>
+</head>
+<body>
+
+<h2>General Sibling Selector</h2>
+
+<p>The general sibling selector (~) selects all elements that are next siblings of a specified element.</p>
+
+<p>Paragraph 1.</p>
+
+<div>
+  <p>Paragraph 2.</p>
+</div>
+
+<p><!DOCTYPE html>
+<html>
+<head>
+<style>
+div ~ p {
+  background-color: green;
+}
+</style>
+</head>
+<body>
+
+<div>
+  <p>Paragraph 2.</p>
+</div>
+
+<p>Paragraph 3.</p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+
+</body>
+</html>
+
+
+p>
+<code>Some code.</code>
+<p>Paragraph 4.</p>
+
+</body>
+</html>
